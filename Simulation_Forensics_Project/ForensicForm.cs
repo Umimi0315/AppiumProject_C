@@ -651,5 +651,10 @@ namespace Simulation_Forensics_Project
             return list_pid;
         }
 
+        private void EmuManageBtn_Click(object sender, EventArgs e)
+        {
+            EmulatorManagement emulatorManagement = new EmulatorManagement();
+            emulatorManagement.Show(this);
+        }
     }
 }

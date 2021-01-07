@@ -56,6 +56,12 @@
     <Compile Include="DownloadFileForm.Designer.cs">
       <DependentUpon>DownloadFileForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="EmulatorManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmulatorManagement.Designer.cs">
+      <DependentUpon>EmulatorManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="ForensicForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     <Compile Include="TaskProgress.cs" />
     <EmbeddedResource Include="DownloadFileForm.resx">
       <DependentUpon>DownloadFileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmulatorManagement.resx">
+      <DependentUpon>EmulatorManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ForensicForm.resx">
       <DependentUpon>ForensicForm.cs</DependentUpon>

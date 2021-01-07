@@ -71,6 +71,7 @@
             this.optionsOnPhoneList = new System.Windows.Forms.ListView();
             this.DevicePort = new System.Windows.Forms.Label();
             this.devicePortText = new System.Windows.Forms.TextBox();
+            this.EmuManageBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // optionsOnEmulatorList
@@ -129,7 +130,7 @@
             // startForensicBtn
             // 
             this.startForensicBtn.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.startForensicBtn.Location = new System.Drawing.Point(194, 565);
+            this.startForensicBtn.Location = new System.Drawing.Point(139, 565);
             this.startForensicBtn.Name = "startForensicBtn";
             this.startForensicBtn.Size = new System.Drawing.Size(90, 23);
             this.startForensicBtn.TabIndex = 2;
@@ -223,7 +224,7 @@
             // 
             // startSimulationBtn
             // 
-            this.startSimulationBtn.Location = new System.Drawing.Point(344, 565);
+            this.startSimulationBtn.Location = new System.Drawing.Point(281, 565);
             this.startSimulationBtn.Name = "startSimulationBtn";
             this.startSimulationBtn.Size = new System.Drawing.Size(89, 23);
             this.startSimulationBtn.TabIndex = 19;
@@ -254,7 +255,7 @@
             // 
             // simulationFromFile
             // 
-            this.simulationFromFile.Location = new System.Drawing.Point(487, 565);
+            this.simulationFromFile.Location = new System.Drawing.Point(414, 565);
             this.simulationFromFile.Name = "simulationFromFile";
             this.simulationFromFile.Size = new System.Drawing.Size(86, 23);
             this.simulationFromFile.TabIndex = 22;
@@ -302,12 +303,23 @@
             this.devicePortText.Size = new System.Drawing.Size(214, 21);
             this.devicePortText.TabIndex = 26;
             // 
+            // EmuManageBtn
+            // 
+            this.EmuManageBtn.Location = new System.Drawing.Point(544, 565);
+            this.EmuManageBtn.Name = "EmuManageBtn";
+            this.EmuManageBtn.Size = new System.Drawing.Size(95, 23);
+            this.EmuManageBtn.TabIndex = 27;
+            this.EmuManageBtn.Text = "模拟器管理";
+            this.EmuManageBtn.UseVisualStyleBackColor = true;
+            this.EmuManageBtn.Click += new System.EventHandler(this.EmuManageBtn_Click);
+            // 
             // ForensicForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(767, 604);
+            this.Controls.Add(this.EmuManageBtn);
             this.Controls.Add(this.devicePortText);
             this.Controls.Add(this.DevicePort);
             this.Controls.Add(this.optionsOnPhoneList);
@@ -368,6 +380,7 @@
         private System.Windows.Forms.ListView optionsOnPhoneList;
         private System.Windows.Forms.Label DevicePort;
         private System.Windows.Forms.TextBox devicePortText;
+        private System.Windows.Forms.Button EmuManageBtn;
     }
 
 }
